@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: bellefair, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body{
+    background: url('./assets/technology/background-technology-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    height: 100vh;
+}
+
+#topBar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid black;*/
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+   padding-left: 20px;
+}
+
+#navBar{
+    width: 60%;
+    height: 80%;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 2px 5px 5px black;
+    margin-right: 0;
+}
+
+#navBar > div {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar > div:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+#navBar > div:active{
+    border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+#navBar > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#navBar > a :active {
+    border-bottom:rgb(16, 13, 179);
+}
+
+#hamburger{
+    visibility: hidden;
+}
+
+#technology{
+    border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+#spaceLaunch > h3{
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-top: 30px;
+    padding-left: 50px;
+    word-spacing: 3px;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+#spaceLaunch > h3 > b{
+    font-weight: bold;
+    opacity: 50%;
+    margin-right: 20px;
+}
+
+
+#mainBody{
+    width: 95%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+
+#left{
+    width: 65%;
+    height: inherit;
+    /* border: 2px solid white;*/
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#circleDiv{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+    /* border: 2px solid white; */
+}
+
+.circles{
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.effect{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#leftBody{
+    width: 80%;
+    height: inherit;
+    padding: 80px 40px;
+    /* border: 2px solid white; */
+}
+
+#terminology{
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+#heading{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight:lighter;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+#description{
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 22px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight:lighter;
+}
+
+#right{
+    width: 35%;
+    height: 75vh;
+    /* border: 2px solid white; */
+}
+
+#rightImg{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: bellefair, 'Times New Roman', Times, serif;
+        color: white;
+    }
+    
+    body{
+        background: url('./assets/technology/background-technology-desktop.jpg') no-repeat center center fixed;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        height: auto;
+    }
+    
+    #topBar{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        /*border: 2px solid black;*/
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+       padding-left: 5px;
+    }
+    
+    #navBar{
+        width: 90%;
+        height: 80%;
+        /*border: 2px solid black;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        float: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 2px 5px 5px black;
+        margin-right: 0;
+    }
+    
+    #navBar > div {
+        height: 90%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #navBar > div:hover{
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    #navBar > div:active{
+        border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+    }
+    
+    #navBar > div > a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    #navBar > a :active {
+        border-bottom:rgb(16, 13, 179);
+    }
+    
+    #hamburger{
+        visibility: visible;
+    }
+    
+    #technology{
+        border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+    }
+    
+    #spaceLaunch > h3{
+        width: 100%;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        margin-top: 30px;
+        word-spacing: 3px;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        padding-right: 70px;
+    }
+    
+    #spaceLaunch > h3 > b{
+        font-weight: bold;
+        opacity: 50%;
+        margin-right: 20px;
+    }
+    
+    
+    #mainBody{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    #left{
+        width: 100%;
+        height: auto;
+        /* border: 2px solid white;*/
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+    
+    #circleDiv{
+        width: 50%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* margin: 5px auto; */
+        margin-right: 70px;
+        /* border: 2px solid white; */
+    }
+    
+    .circles{
+        width: 50px;
+        height: 50px;
+        border: 0.5px solid white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circles:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .effect{
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border: 0.5px solid white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    
+    #leftBody{
+        width: 100%;
+        height: inherit;
+        padding-right: 70px;
+        padding-left: auto;
+        /* border: 2px solid white; */
+    }
+    
+    #terminology{
+        text-transform: uppercase;
+        color: white;
+        font-size: 14px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+    
+    #heading{
+        text-transform: uppercase;
+        color: white;
+        font-size: 35px;
+        font-weight:lighter;
+        letter-spacing: 3px;
+        margin-top: 20px;
+    }
+    
+    #description{
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 22px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+        font-weight:lighter;
+    }
+    
+    #right{
+        width: 100%;
+        height: auto;
+        /* border: 2px solid white; */
+    }
+    
+    #rightImg{
+        width: 100%;
+        height: 60vh;
+        border-radius: 0%;
+    }
+}

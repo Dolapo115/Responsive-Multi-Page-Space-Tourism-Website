@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: bellefair, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: url('./assets/crew/background-crew-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    height: 100vh;
+}
+
+#topBar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid black;*/
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+   padding-left: 20px;
+}
+
+#navBar{
+    width: 60%;
+    height: 80%;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 2px 5px 5px black;
+    margin-right: 0;
+}
+
+#navBar > div {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar > div:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+#navBar > div:active{
+    border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+#navBar > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#navBar > a :active {
+    border-bottom:rgb(16, 13, 179);
+}
+
+#hamburger{
+    visibility: hidden;
+}
+
+#crew{
+    border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+#mainBody{
+    width: 100%;
+    height: 75vh;
+    margin-top: 5vh;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#left{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    /* border: 2px solid white; */
+    
+}
+
+#expContainer{
+    width: 100%;
+    height: 300px;
+    padding-left: 60px;
+    padding-right: 0px;
+}
+
+#meetCrew{
+    text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin-bottom: 250px; */
+}
+
+#post{
+    text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+
+#name{
+    text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#intro{
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+#circleCont{
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.circle:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#circle1{
+    background-color: white;
+}
+
+.effect{
+    background-color: white;
+}
+
+#right{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personnelImg{
+    width: auto;
+    height: inherit;
+}
+
+@media only screen and (max-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: bellefair, 'Times New Roman', Times, serif;
+    }
+    
+    body{
+        background: url('./assets/crew/background-crew-desktop.jpg') no-repeat center center fixed;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        height: auto;
+    }
+    
+    #topBar{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        /*border: 2px solid black;*/
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+       padding-left: 5px;
+    }
+    
+    #navBar{
+        width: 85%;
+        height: 80%;
+        /*border: 2px solid black;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-shadow: 2px 5px 5px black;
+        margin-right: 0;
+    }
+    
+    #navBar > div {
+        height: 90%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #navBar > div:hover{
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    #navBar > div:active{
+        border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+    }
+    
+    #navBar > div > a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    #navBar > a :active {
+        border-bottom:rgb(16, 13, 179);
+    }
+    
+    #hamburger{
+        visibility: visible;
+    }
+    
+    #crew{
+        border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+    }
+    
+    #mainBody{
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    #left{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: auto;
+        padding-right: 50px;
+        /* border: 2px solid white; */
+        /* padding-top: 30px; */
+        /* border: 2px solid white; */
+        
+    }
+    
+    #expContainer{
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 60px;
+        padding-right: 0px; */
+    }
+    
+    #meetCrew{
+        text-transform: uppercase;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 100;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        margin: 20px auto;
+        text-align: center;
+        /* border: 2px solid white; */
+        /* margin-bottom: 250px; */
+    }
+    
+    #post{
+        text-transform: uppercase;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 100;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 70%;
+    }
+    
+    #name{
+        text-transform: uppercase;
+        color: white;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 100;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        margin: 10px auto;
+    }
+    
+    #intro{
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 25px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #circleCont{
+        margin-top: 30px;
+        width: 100vw;
+        height: 30px;
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* margin-left: auto; */
+        margin-right: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .circle{
+        width: 30px;
+        height: 30px;
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+    }
+    
+    .circle:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    #circle1{
+        background-color: white;
+    }
+    
+    .effect{
+        background-color: white;
+    }
+    
+    #right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid white; */
+        padding: auto;
+        margin-top: 20px;
+    }
+    
+    #personnelImg{
+        width: 70%;
+        height: inherit;
+    }
+}
